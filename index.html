@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>VHS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    Testing
+    <nav class="vhs-menu">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="glitch-section">
+            <h2>ABOUT ME</h2>
+            <p>Hey, my names Luke. I'm currently a Senior studying Computer Science at Washington State University.
+                My interests range from software, AI, graphic and web design, video editing, rock climbing, music, video games, movies, etc.
+
+            </p>
+        </section>
+
+        <section id="projects" class="glitch-section">
+            <h2>PROJECTS</h2>
+            <div class="project-list">
+                <a data-project="movie-tracker">React Movie Tracker</a>
+                <a data-project="letterboxd">LetterBoxd TasteMeter Extension</a>
+                <a data-project="video-editing">Video Editing</a>
+            </div>
+            <div id="project-details" class="project-details"></div>
+        </section>
+
+        <section id="skills" class="glitch-section">
+            <h2>SKILLS</h2>
+            <ul>
+                <li >HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="glitch-section">
+            <h2>CONTACT</h2>
+            <p>Email: lflock03@gmail.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --bg-color: #000;
+    --text-color: #0f0;
+    /* --text-color: white; */
+    --glitch-color: #f0f;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.vhs-menu {
+    background-color: #111;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.vhs-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vhs-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.vhs-menu a::before,
+.vhs-menu a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.vhs-menu a::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--glitch-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.vhs-menu a::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--glitch-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-shimmer {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+    }
+    20% {
+        clip: rect(62px, 9999px, 42px, 0);
+    }
+    40% {
+        clip: rect(90px, 9999px, 23px, 0);
+    }
+    60% {
+        clip: rect(16px, 9999px, 78px, 0);
+    }
+    80% {
+        clip: rect(55px, 9999px, 37px, 0);
+    }
+    100% {
+        clip: rect(8px, 9999px, 69px, 0);
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.glitch-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.glitch-section a {
+    cursor: pointer;
+    font-size: large;
+
+}
+.glitch-section a:hover {
+    color: white;
+    
+}
+
+.glitch-section.glitch-active {
+    opacity: 1;
+}
+
+iframe{
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    font-size: 24px;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.glitch-text {
+    position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--glitch-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--glitch-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+    }
+    20% {
+        clip: rect(62px, 9999px, 42px, 0);
+    }
+    40% {
+        clip: rect(90px, 9999px, 23px, 0);
+    }
+    60% {
+        clip: rect(16px, 9999px, 78px, 0);
+    }
+    80% {
+        clip: rect(55px, 9999px, 37px, 0);
+    }
+    100% {
+        clip: rect(8px, 9999px, 69px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(21px, 9999px, 74px, 0);
+    }
+    20% {
+        clip: rect(52px, 9999px, 32px, 0);
+    }
+    40% {
+        clip: rect(80px, 9999px, 13px, 0);
+    }
+    60% {
+        clip: rect(6px, 9999px, 68px, 0);
+    }
+    80% {
+        clip: rect(45px, 9999px, 27px, 0);
+    }
+    100% {
+        clip: rect(18px, 9999px, 59px, 0);
+    }
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-list a {
+    width: fit-content;
+    margin: 10px 2em;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.project-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-list a.selected {
+    color: white;
+}
+
+
