@@ -72,18 +72,23 @@ body {
     0% {
         clip: rect(31px, 9999px, 94px, 0);
     }
+
     20% {
         clip: rect(62px, 9999px, 42px, 0);
     }
+
     40% {
         clip: rect(90px, 9999px, 23px, 0);
     }
+
     60% {
         clip: rect(16px, 9999px, 78px, 0);
     }
+
     80% {
         clip: rect(55px, 9999px, 37px, 0);
     }
+
     100% {
         clip: rect(8px, 9999px, 69px, 0);
     }
@@ -105,27 +110,24 @@ main {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
 .glitch-section a {
     cursor: pointer;
     font-size: large;
 
 }
+
 .glitch-section a:hover {
     color: white;
-    
+
 }
 
 .glitch-section.glitch-active {
     opacity: 1;
 }
 
-iframe{
-    margin-bottom: 15px;
-}
-a{
-    color: #0f0;
-}
-.link{
+
+.link {
     color: #f0f;
 }
 
@@ -134,7 +136,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-p, ul {
+p,
+ul {
     font-size: 40px;
     max-width: 1200px;
 }
@@ -176,18 +179,23 @@ ul {
     0% {
         clip: rect(31px, 9999px, 94px, 0);
     }
+
     20% {
         clip: rect(62px, 9999px, 42px, 0);
     }
+
     40% {
         clip: rect(90px, 9999px, 23px, 0);
     }
+
     60% {
         clip: rect(16px, 9999px, 78px, 0);
     }
+
     80% {
         clip: rect(55px, 9999px, 37px, 0);
     }
+
     100% {
         clip: rect(8px, 9999px, 69px, 0);
     }
@@ -197,18 +205,23 @@ ul {
     0% {
         clip: rect(21px, 9999px, 74px, 0);
     }
+
     20% {
         clip: rect(52px, 9999px, 32px, 0);
     }
+
     40% {
         clip: rect(80px, 9999px, 13px, 0);
     }
+
     60% {
         clip: rect(6px, 9999px, 68px, 0);
     }
+
     80% {
         clip: rect(45px, 9999px, 27px, 0);
     }
+
     100% {
         clip: rect(18px, 9999px, 59px, 0);
     }
@@ -252,10 +265,71 @@ ul {
 .project-details li {
     font-size: 22px;
     margin-bottom: 20px;
-} */
+}
 
 .project-list a.selected {
     color: white;
 }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 25px;
+}
 
+@media (max-width: 768px) {
+    .vhs-menu a {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p,
+    ul {
+        font-size: 16px;
+    }
+
+    .project-list a {
+        font-size: 16px;
+    }
+
+    .project-details h3 {
+        font-size: 20px;
+    }
+
+    .project-details p,
+    .project-details li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vhs-menu a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p,
+    ul {
+        font-size: 14px;
+    }
+
+    .project-list a {
+        font-size: 14px;
+    }
+
+    .project-details h3 {
+        font-size: 18px;
+    }
+
+    .project-details p,
+    .project-details li {
+        font-size: 12px;
+    }
+}
