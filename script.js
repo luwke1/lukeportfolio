@@ -79,19 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'movie-tracker': `
             <h3>React Movie Tracker</h3>
             <p>A web application built with React to track and rate movies you've watched.</p>
+            <p><a class="link" href="https://github.com/luwke1/react-movie-tracker">https://github.com/luwke1/react-movie-tracker</a></p>
+            
             <ul>
-                <li>Features user authentication</li>
-                <li>Integrates with a movie database API</li>
-                <li>Allows users to rate and review movies</li>
+                <li>Developed a responsive ReactJS web app using HTML, CSS, and JavaScript</li>
+                <li>Integrated external APIs (TMDB for movie data, OpenAI for smart recommendations)</li>
+                <li>Implemented dynamic movie catalog with rating and watchlist features</li>
+                <li>Utilized RESTful API calls for fetching and displaying movie data</li>
             </ul>
         `,
         'letterboxd': `
             <h3>LetterBoxd TasteMeter Extension</h3>
             <p>A browser extension that enhances the LetterBoxd experience with additional metrics.</p>
+            <p><a class="link" href="https://github.com/luwke1/letterboxd-tastemeter-extension">https://github.com/luwke1/letterboxd-tastemeter-extension</a></p>
             <ul>
-                <li>Calculates compatibility between users</li>
-                <li>Provides personalized movie recommendations</li>
-                <li>Visualizes watching habits and preferences</li>
+            
+                <li>Built a chrome extension that generates a similarity score between you and another user based on all movie ratings</li>
+                <li>Integrated various web APIs to fetch and process user data and learned to work with RESTful services and JSON data</li>
+                <li>Utilized data processing and analysis algorithms to calculate and compare user ratings to determine similarity scores</li>
             </ul>
         `,
         'video-editing': `
@@ -101,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/yOXr7wK0jj0?si=d9F5nP6d_SGmTzWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>Busan, Korea (2024)</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dcXYg02MpgM?si=5mI02cFewNDM-jFW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Japan (2024)</p>
+            <p>Japan (Coming Soon)</p>
         `
     };
 

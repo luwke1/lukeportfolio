@@ -122,15 +122,21 @@ main {
 iframe{
     margin-bottom: 15px;
 }
+a{
+    color: #0f0;
+}
+.link{
+    color: #f0f;
+}
 
 h2 {
-    font-size: 48px;
+    font-size: 70px;
     margin-bottom: 20px;
 }
 
 p, ul {
-    font-size: 24px;
-    max-width: 600px;
+    font-size: 40px;
+    max-width: 1200px;
 }
 
 ul {
@@ -234,7 +240,7 @@ ul {
 }
 
 .project-details p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -244,9 +250,9 @@ ul {
 }
 
 .project-details li {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
+    font-size: 22px;
+    margin-bottom: 20px;
+} */
 
 .project-list a.selected {
     color: white;
