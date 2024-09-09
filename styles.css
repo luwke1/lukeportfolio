@@ -93,8 +93,7 @@ main {
 
 .glitch-section a {
     cursor: pointer;
-    font-size: large;
-
+    
 }
 
 .glitch-section a:hover {
@@ -107,8 +106,8 @@ main {
     opacity: 1;
 }
 
-
 .link {
+    text-shadow: #f0f 1px 0 10px;
     color: #f0f;
 }
 
@@ -192,6 +191,8 @@ ul {
 }
 
 .project-list a {
+    cursor: pointer;
+    /* font-size: large; */
     width: fit-content;
     margin: 10px 2em;
     cursor: pointer;
@@ -236,6 +237,11 @@ iframe {
     margin-bottom: 25px;
 }
 
+#contact .link {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
 @media (max-width: 768px) {
     .vhs-menu a {
         font-size: 16px;
@@ -243,6 +249,12 @@ iframe {
 
     h2 {
         font-size: 28px;
+    }
+
+    #contact .link {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
 
     p,
@@ -261,33 +273,5 @@ iframe {
     .project-details p,
     .project-details li {
         font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .vhs-menu a {
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    p,
-    ul {
-        font-size: 14px;
-    }
-
-    .project-list a {
-        font-size: 14px;
-    }
-
-    .project-details h3 {
-        font-size: 18px;
-    }
-
-    .project-details p,
-    .project-details li {
-        font-size: 12px;
     }
 }
