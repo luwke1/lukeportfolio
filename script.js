@@ -47,13 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ScrollReveal animations
     ScrollReveal().reveal('.glitch-section', {
         delay: 200,
-        distance: '50px',
         duration: 1000,
         easing: 'cubic-bezier(0.5, 0, 0, 1)',
         interval: 0,
         opacity: 0,
-        origin: 'bottom',
-        scale: 0.9,
         cleanup: true,
         container: document.documentElement,
         mobile: true,
@@ -71,14 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-     // Project details handling
-    const projectLinks = document.querySelectorAll('.project-list a');
-    const projectDetails = document.getElementById('project-details');
-
     const projectContent = {
         'movie-tracker': `
-            <h3>React Movie Tracker</h3>
-            <p>A web application built with React to track and rate movies you've watched.</p>
+            <h3>ReactJS Movie Tracker</h3>
+            <p>A web application built with ReactJS to track and rate movies you've watched.</p>
             <p><a class="link" href="https://github.com/luwke1/react-movie-tracker">https://github.com/luwke1/react-movie-tracker</a></p>
             
             <ul>
@@ -110,6 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
         `
     };
 
+     // Project details handling
+    const projectLinks = document.querySelectorAll('.project-list a');
+    
+    const projectDetails = document.getElementById('project-details');
+
+    projectLinks[0].classList.add('selected');
+    projectDetails.innerHTML = projectContent['movie-tracker'];
+    
+
     projectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -121,22 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add 'selected' class to clicked link
             link.classList.add('selected');
             
-            glitchTransition(() => {
-                projectDetails.innerHTML = projectContent[projectId];
-            });
+            projectDetails.innerHTML = projectContent[projectId];
         });
     });
 
-    function glitchTransition(callback) {
-        glitchOverlay.classList.add('active');
-        glitchOverlay.style.animation = 'rgb-shift 0.3s steps(3) infinite';
-        
-        setTimeout(() => {
-            callback();
-            setTimeout(() => {
-                glitchOverlay.classList.remove('active');
-                glitchOverlay.style.animation = 'none';
-            }, 300);
-        }, 300);
-    }
 });

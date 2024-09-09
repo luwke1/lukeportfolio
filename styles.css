@@ -35,11 +35,17 @@ body {
 }
 
 .vhs-menu a {
+    text-shadow: #0f0 1px 0 3px;
     color: var(--text-color);
     text-decoration: none;
     font-size: 24px;
     position: relative;
     display: inline-block;
+}
+
+.vhs-menu a:hover{
+    text-shadow: var(--glitch-color) 1px 0 3px;
+    color: var(--glitch-color);
 }
 
 .vhs-menu a::before,
@@ -68,37 +74,12 @@ body {
     animation: glitch-anim 5s infinite linear alternate-reverse;
 }
 
-@keyframes glitch-shimmer {
-    0% {
-        clip: rect(31px, 9999px, 94px, 0);
-    }
-
-    20% {
-        clip: rect(62px, 9999px, 42px, 0);
-    }
-
-    40% {
-        clip: rect(90px, 9999px, 23px, 0);
-    }
-
-    60% {
-        clip: rect(16px, 9999px, 78px, 0);
-    }
-
-    80% {
-        clip: rect(55px, 9999px, 37px, 0);
-    }
-
-    100% {
-        clip: rect(8px, 9999px, 69px, 0);
-    }
-}
-
 main {
     padding: 20px;
 }
 
 .glitch-section {
+    text-shadow: #0f0 1px 0 4px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,7 +87,6 @@ main {
     align-items: center;
     text-align: center;
     position: relative;
-    /* overflow: hidden; */
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -118,6 +98,7 @@ main {
 }
 
 .glitch-section a:hover {
+    text-shadow: white 1px 0 10px;
     color: white;
 
 }
@@ -138,6 +119,7 @@ h2 {
 
 p,
 ul {
+    
     font-size: 40px;
     max-width: 1200px;
 }
@@ -201,31 +183,6 @@ ul {
     }
 }
 
-@keyframes glitch-anim-2 {
-    0% {
-        clip: rect(21px, 9999px, 74px, 0);
-    }
-
-    20% {
-        clip: rect(52px, 9999px, 32px, 0);
-    }
-
-    40% {
-        clip: rect(80px, 9999px, 13px, 0);
-    }
-
-    60% {
-        clip: rect(6px, 9999px, 68px, 0);
-    }
-
-    80% {
-        clip: rect(45px, 9999px, 27px, 0);
-    }
-
-    100% {
-        clip: rect(18px, 9999px, 59px, 0);
-    }
-}
 
 .project-list {
     display: flex;
@@ -268,6 +225,7 @@ ul {
 }
 
 .project-list a.selected {
+    text-shadow: white 1px 0 10px;
     color: white;
 }
 
