@@ -41,7 +41,7 @@ export default function About(){
                             Hi, I am a passionate full-stack developer whose journey into technology was sparked by a love for creative expression. With a background in graphic design and visual art, I was naturally drawn to front-end development, but my curiosity quickly led me down the path of building complete applications from the ground up. Today, I leverage this unique blend of skills to create cohesive digital experiences where every line of code serves the end user.
                         </p>
                         <p>
-                            When I'm not coding, I'm most likely exploring outside, watching movies, playing games, or experimenting with generative art. This blend of nature and technology deeply inspires my work.
+                            When I'm not coding, I'm most likely exploring outside, watching movies, playing games, or experimenting with new art. This blend of nature and technology deeply inspires my work.
                         </p>
                         <div className="flex items-start mt-6 space-x-4">
                             <GraduationCap className="h-8 w-8 text-green-400 mt-1"/>
